@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Verdy & Zuwita</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Javanese+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header id="cover" class="section d-flex flex-column justify-content-center align-items-center text-center text-white" style="min-height: 100vh; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/cover-image.jpg'); background-size: cover; background-position: center;">
+            <div class="cover-content">
+                <h1 id="nama-tamu" class="mb-3">Yth. Bapak/Ibu/Saudara/i</h1>
+                <p class="tanggal-acara mb-2">Minggu, 20 Juli 2025</p>
+                <h2 class="nama-mempelai mb-4">Verdy & Zuwita</h2>
+                <button id="lihat-undangan" class="btn btn-primary btn-lg">Lihat Undangan</button>
+            </div>
+        </header>
+
+        <section id="mempelai" class="section py-5">
+            <h2 class="text-center mb-4">Informasi Mempelai</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-4 text-center">
+                    <img src="images/mempelai-pria.jpg" alt="Foto Mempelai Pria" class="rounded-circle img-fluid mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 5px solid #f0e68c;">
+                    <h3>Verdy Haris Munandar</h3>
+                    <p class="text-muted">[Cerita singkat tentang mempelai pria]</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/mempelai-wanita.jpg" alt="Foto Mempelai Wanita" class="rounded-circle img-fluid mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 5px solid #f0e68c;">
+                    <h3>Zuwita Wulandari</h3>
+                    <p class="text-muted">[Cerita singkat tentang mempelai wanita]</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="acara" class="section py-5">
+            <h2 class="text-center mb-4">Informasi Acara</h2>
+            <div class="row justify-content-center g-3">
+                <div class="col-md-6">
+                    <div class="card p-4 shadow-sm">
+                        <h3>Akad Nikah</h3>
+                        <p><i class="far fa-calendar-alt"></i> [Hari], [Tanggal] [Bulan] [Tahun]</p>
+                        <p><i class="far fa-clock"></i> [Waktu Akad]</p>
+                        <p><i class="fas fa-map-marker-alt"></i> [Tempat Akad]</p>
+                        <a href="[Link Google Maps Akad]" target="_blank" rel="noopener noreferrer" class="btn btn-outline-info btn-sm"><i class="fas fa-map-marked-alt"></i> Lihat Peta</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-4 shadow-sm">
+                        <h3>Resepsi Pernikahan</h3>
+                        <p><i class="far fa-calendar-alt"></i> [Hari], [Tanggal] [Bulan] [Tahun]</p>
+                        <p><i class="far fa-clock"></i> [Waktu Resepsi]</p>
+                        <p><i class="fas fa-map-marker-alt"></i> [Tempat Resepsi]</p>
+                        <a href="[Link Google Maps Resepsi]" target="_blank" rel="noopener noreferrer" class="btn btn-outline-info btn-sm"><i class="fas fa-map-marked-alt"></i> Lihat Peta</a>
+                        <br>
+                        <a href="[Link Live Streaming]" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm mt-2"><i class="fas fa-video"></i> Live Streaming (Jika Ada)</a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mt-4">Jadwal Acara Lengkap</h3>
+            <ul class="list-group">
+                <li class="list-group-item">[Waktu] - [Kegiatan]</li>
+                <li class="list-group-item">[Waktu] - [Kegiatan]</li>
+                </ul>
+        </section>
+
+        <section id="galeri" class="section py-5">
+            <h2 class="text-center mb-4">Galeri Foto Pre-Wedding</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/prewed-1.jpg" alt="Foto Pre-Wedding 1" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/prewed-2.jpg" alt="Foto Pre-Wedding 2" class="card-img-top">
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/prewed-3.jpg" alt="Foto Pre-Wedding 3" class="card-img-top">
+                    </div>
+                </div>
+                </div>
+
+        </section>
+
+        <section id="peta" class="section py-5">
+            <h2 class="text-center mb-4">Peta Lokasi Acara</h2>
+            <div class="map-container shadow-sm rounded">
+                <iframe id="map-canvas" class="map_part" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=way%20pengubuan+(Invitation)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+        </section>
+
+        <section id="love-story" class="section py-5">
+            <h2 class="text-center mb-4">Kisah Cinta Kami</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content bg-white rounded shadow-sm p-3">
+                        <h3>[Tanggal Momen 1]</h3>
+                        <p>[Deskripsi singkat momen 1]</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content bg-white rounded shadow-sm p-3">
+                        <h3>[Tanggal Momen 2]</h3>
+                        <p>[Deskripsi singkat momen 2]</p>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section id="tamu" class="section py-5">
+            <h2 class="text-center mb-4">Kepada Yth.</h2>
+            <h3 id="nama-tamu-section" class="text-center">[Nama Tamu dari URL]</h3>
+        </section>
+
+        <section id="rsvp" class="section py-5">
+            <h2 class="text-center mb-4">Buku Tamu & Konfirmasi Kehadiran</h2>
+            <form id="rsvp-form" class="col-md-6 offset-md-3">
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Nama Lengkap:</label>
+                    <input type="text" class="form-control" id="nama" name="nama" required>
+                </div>
+                <div class="mb-3">
+                    <label for="kehadiran" class="form-label">Konfirmasi Kehadiran:</label>
+                    <select class="form-select" id="kehadiran" name="kehadiran" required>
+                        <option value="">-- Pilih --</option>
+                        <option value="hadir">Hadir</option>
+                        <option value="tidak-hadir">Tidak Hadir</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="jumlah-orang" class="form-label">Jumlah Orang (Jika Hadir):</label>
+                    <input type="number" class="form-control" id="jumlah-orang" name="jumlah-orang" min="1" value="1">
+                </div>
+                <div class="mb-3">
+                    <label for="ucapan" class="form-label">Ucapan Selamat:</label>
+                    <textarea class="form-control" id="ucapan" name="ucapan" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim Konfirmasi</button>
+            </form>
+            <div id="rsvp-message" class="alert alert-success mt-3 col-md-6 offset-md-3 d-none">Terima kasih atas konfirmasinya!</div>
+        </section>
+
+        <section id="countdown" class="section py-5">
+            <h2 class="text-center mb-4">Menuju Hari Bahagia</h2>
+            <div id="timer" class="d-flex justify-content-center gap-3">
+                <div class="timer-part text-center">
+                    <span id="days" class="display-4">00</span>
+                    <div class="label">Hari</div>
+                </div>
+                <div class="timer-part text-center">
+                    <span id="hours" class="display-4">00</span>
+                    <div class="label">Jam</div>
+                </div>
+                <div class="timer-part text-center">
+                    <span id="minutes" class="display-4">00</span>
+                    <div class="label">Menit</div>
+                </div>
+                <div class="timer-part text-center">
+                    <span id="seconds" class="display-4">00</span>
+                    <div class="label">Detik</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="music" class="section py-5 text-center">
+            <h2 class="mb-4">Musik</h2>
+            <audio id="background-audio" src="audio/background-music.mp3" loop></audio>
+            <div class="audio-controls">
+                <button id="play-pause-button" class="btn btn-outline-secondary"><i class="fas fa-play"></i></button>
+            </div>
+        </section>
+
+        <section id="kado" class="section py-5 text-center">
+            <h2 class="mb-4">Kirim Kado Digital</h2>
+            <p>Anda dapat memberikan hadiah secara digital melalui:</p>
+            <div class="row justify-content-center g-3">
+                <div class="col-md-4">
+                    <div class="card p-3 shadow-sm">
+                        <h3>QRIS</h3>
+                        <img src="images/qris-contoh.png" alt="QRIS" class="img-fluid" style="max-width: 150px;">
+                        <p class="mt-2">Scan kode QR di atas</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 shadow-sm">
+                        <h3>Dana</h3>
+                        <p>Nomor Dana: <span class="fw-bold dana-number">081234567890</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-3 text-center text-muted">
+            &copy; 2025 Verdy & Zuwita
+        </footer>
+    </div>
+
+    <div class="ornament-bottom">
+        <img src="assets/ornament-jawa.png" alt="Ornamen Jawa" class="img-fluid">
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
